@@ -84,13 +84,13 @@
                 <div class="col-xl-12">
                     <div class="section_title mb-40 text-center">
                         <h4>
-                            240 Properties found</h4>
+                            Find your best Match</h4>
                     </div>
                 </div>
             </div>
             <div class="row">
 				<?php include('lib/connect.php'); 
-					$query="SELECT * FROM property where Active='1' order by CreateDate desc LIMIT 3";
+					$query="SELECT * FROM property where Active='1' order by CreateDate desc ";
 					$result=mysqli_query($con,$query)or die(mysqli_error($con)); 
 					$i=1; 
 					while($row=mysqli_fetch_array($result))
